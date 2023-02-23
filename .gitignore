@@ -5,6 +5,15 @@ coverage.json
 typechain
 typechain-types
 
+*.env
+*coverage
+*coverage.json
+**/typechain
+**/typechain-type
+
+
 # Hardhat files
 cache
 artifacts
+**/cache
+**/artifacts
