@@ -1,8 +1,6 @@
 {
-  "name": "ls",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "template",
+  "packageManager": "yarn@3.4.1",
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
     "@ethersproject/providers": "^5.4.7",
