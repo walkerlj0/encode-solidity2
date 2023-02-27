@@ -13,7 +13,7 @@ npx hardhat run scripts/deploy.ts
 ```
 
 # Set up a Hardhat Project
-In order to set up hardhat project you may have cloned, you will first have to run the command `yarn install`, then you can try building it with `yarn hardhat init`
+In order to set up hardhat project you may have cloned, you will first have to run the command `yarn install`, then you can try building it with `yarn hardhat compile`
 
 # Set the npm version with nvm
 List versions with `nvm ls-remote`
@@ -147,3 +147,8 @@ Test it out:
 
 
 
+## Clearing Template files
+rm ./contracts/*
+rm ./scripts/*
+rm ./tests/*
+yarn hardhat clean
