@@ -12,6 +12,18 @@ npx hardhat node
 npx hardhat run scripts/deploy.ts
 ```
 
+# Set up a Hardhat Project
+In order to set up hardhat project you may have cloned, you will first have to run the command `yarn install`, then you can try building it with `yarn hardhat init`
+
+# Set the npm version with nvm
+List versions with `nvm ls-remote`
+Example version `v18.14.2`
+Update version with `nvm install v18.14.2`
+`nvm alias default 18`
+`npm install npm --global # Upgrade npm to the latest version`
+
+Setting the default node version: https://hardhat.org/tutorial/setting-up-the-environment#macos
+
 ## Cleaning Template Files
 ```
 rm .\contracts\*
@@ -27,7 +39,45 @@ yarn hardhat clean
  ```
 
 ## Creating a new peoject from template:
-### Option 1 - Start a new project from scratch
+
+
+### Option 1 - Copy-Pasta
+* Copy all Files (not directories) and the .yarn directory fromthe template, and paste it in a new project
+
+You should have the files in you project: 
+
+```
+contracts
+scripts
+tests
+
+.editorconfig
+.env
+.gitattributes
+.gitignore
+.yarn
+.yarnrc.yml
+README.md
+assets
+cache
+hardhat.config.ts
+package.json
+
+tsconfig.json
+yarn.lock
+```
+* Create folders for project files
+```
+mkdir contracts
+mkdir tests
+mkdir scripts
+```
+
+* Now, to make it a project run the command `yarn install`
+
+This should generate a node_modules folder.
+
+### Option 2 - Start a new project from scratch
 ```
 yarn install
 yarn init -2
@@ -95,40 +145,5 @@ Test it out:
      yarn hardhat test 
 
 
-### Option 2
-* Copy all Files (not directories) and the .yarn directory fromthe template, and paste it in a new project
-
-You should have the files in you project: 
-
-```
-contracts
-scripts
-tests
-
-.editorconfig
-.env
-.gitattributes
-.gitignore
-.yarn
-.yarnrc.yml
-README.md
-assets
-cache
-hardhat.config.ts
-package.json
-
-tsconfig.json
-yarn.lock
-```
-* Create folders for project files
-```
-mkdir contracts
-mkdir tests
-mkdir scripts
-```
-
-* Now, to make it a project run the command `yarn install`
-
-This should generate a node_modules folder.
 
 
